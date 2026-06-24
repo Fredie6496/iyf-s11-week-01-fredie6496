@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Me</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" 
+                   placeholder="Enter your full name" 
+                   value="Fredie Gachoki Njiru" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="Enter your email" 
+                   value="gachokifredie1@gmail.com" required>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" 
+                   placeholder="Enter your phone number" 
+                   value="072897563">
+        </fieldset>
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">--Select a subject--</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support Request</option>
+                <option value="collaboration">Collaboration Opportunity</option>
+            </select>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" 
+                      placeholder="Write your message here..." 
+                      minlength="50" required>
+Hello Fredie, I am reaching out because I admire your journey in programming and web development. I would love to connect, share ideas, and possibly collaborate on future projects. Looking forward to hearing from you!
+            </textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label>
+                <input type="checkbox" name="newsletter"> Subscribe to newsletter
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
